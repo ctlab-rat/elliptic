@@ -1,6 +1,6 @@
 {
   "name": "elliptic",
-  "version": "6.6.1",
+  "version": "6.6.2",
   "description": "EC cryptography",
   "main": "lib/elliptic.js",
   "files": [
@@ -42,7 +42,7 @@
     "grunt-mocha-istanbul": "^5.0.2",
     "grunt-saucelabs": "^9.0.1",
     "istanbul": "^0.4.5",
-    "mocha": "^8.0.1"
+    "mocha": "11.7.5"
   },
   "dependencies": {
     "bn.js": "^4.11.9",
@@ -52,5 +52,57 @@
     "inherits": "^2.0.4",
     "minimalistic-assert": "^1.0.1",
     "minimalistic-crypto-utils": "^1.0.1"
+  },
+  "overrides": {
+    "diff": "8.0.3",
+    "ws": "8.19.0",
+    "qs@>=6.0.0 <6.14.1": "6.14.1",
+    "postman-request": {
+      "qs": "6.14.1"
+    },
+    "request": "npm:postman-request@2.88.1-postman.48",
+    "glob@>=10 <11": "10.5.0",
+    "glob@>=11 <12": "$glob",
+    "glob@>=7 <10": "10.5.0",
+    "glob": {
+      "minimatch": {
+        "brace-expansion": "2.0.2"
+      }
+    },
+    "minimatch": "3.0.5",
+    "mocha": {
+      "minimatch": "3.0.5"
+    },
+    "braces": "3.0.3",
+    "lodash": "4.17.21",
+    "table": {
+      "lodash": "4.17.21"
+    },
+    "js-yaml": "4.1.1",
+    "grunt": {
+      "glob": "10.5.0",
+      "minimatch": {
+        "brace-expansion": "2.0.2"
+      }
+    },
+    "underscore.string": "3.3.6",
+    "tough-cookie": "6.0.0",
+    "requestretry": "8.0.0",
+    "micromatch": "4.0.8",
+    "form-data": "4.0.5",
+    "browserify-sign": {
+      "elliptic": ""
+    },
+    "create-ecdh": {
+      "elliptic": ""
+    },
+    "crypto-browserify": {
+      "browserify-sign": {
+        "elliptic": ""
+      },
+      "create-ecdh": {
+        "elliptic": ""
+      }
+    }
   }
 }
